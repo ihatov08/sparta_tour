@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tour date:</strong>
+  <%= @course.tour_date %>
+</p>
+
+<p>
+  <strong>Guide name:</strong>
+  <%= @course.guide_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @course.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @course.description %>
+</p>
+
+<p>
+  <strong>Lower limit:</strong>
+  <%= @course.lower_limit %>
+</p>
+
+<p>
+  <strong>Upper limit:</strong>
+  <%= @course.upper_limit %>
+</p>
+
+<hr />
+<%= render 'participants_list' %>
+
+
+
+<%= render 'new_participant_form' %>
+<!-- 別のフォームを引っ張ることができる -->
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>
