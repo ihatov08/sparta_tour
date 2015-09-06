@@ -35,7 +35,8 @@
 
 
 
-<%= render 'new_participant_form' %>
+<%= render partial: 'new_participant_form', locals:{
+  participant: Participant.new(course_id: @course.id)} %>
 <!-- 別のフォームを引っ張ることができる -->
 
 <%= link_to 'Edit', edit_course_path(@course) %> |

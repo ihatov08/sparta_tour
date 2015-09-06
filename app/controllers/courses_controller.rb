@@ -11,7 +11,7 @@ class CoursesController < ApplicationController
   # GET /courses/1.json
   def show
     # @participant = Participant.new
-    @participants = Participant.where(course_id: @course.id)
+    @participants = @course.participants
     # ↑追加※コースの下に名前一覧が表示されるように
     @participant = Participant.new(course_id: @course.id)
   end

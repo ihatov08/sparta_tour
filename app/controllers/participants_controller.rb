@@ -21,8 +21,8 @@ class ParticipantsController < ApplicationController
 
   # GET /participants/1/edit
   def edit
-    @participant = Participant.new
-    (course_id: @course.id)
+    # @participant = Participant.new
+    # (course_id: @course.id)
   end
 
   # POST /participants
